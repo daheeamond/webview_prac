@@ -23,20 +23,17 @@ class HomeScreen extends StatelessWidget {
              controller!.loadUrl(homeurl);
            },
              icon: Icon(
-               Icons.home
+               Icons.add
              ),
            ),
          ],
        ),
-        body: SafeArea(
-        child: WebView(
+        body: WebView(
           onWebViewCreated:(WebViewController controller){
             this.controller = controller;
           } ,
           initialUrl: homeurl,
           javascriptMode: JavascriptMode.unrestricted,
-          gestureNavigationEnabled: true,
-        )
         )
     );
   }
