@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
              controller!.loadUrl(homeurl);
            },
              icon: Icon(
-               Icons.add
+               Icons.home_outlined
              ),
            ),
          ],
